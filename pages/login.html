@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In | Re3aya</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-  <!-- Bootstrap 5 -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
@@ -21,75 +16,54 @@
 </head>
 <body>
 
-  <div class="container">
+  <main class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-        <div class="login-container card p-4 p-sm-5 text-center text-md-start">
+      <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+        <div class="card login-card shadow p-4">
 
           <a href="../index.html" class="logo">
             Re<span>3aya</span>
           </a>
 
-          <h2>Welcome Back!</h2>
-          <p class="subtitle">Sign in to continue to Re3aya</p>
+          <h1 class="h4 fw-bold text-center mb-1">Welcome Back</h1>
+          <p class="text-muted text-center small mb-4">Sign in to your Re3aya account</p>
 
           <form action="../index.html" method="get" class="row g-3">
-
             <div class="col-12">
               <label for="email" class="form-label">Email Address</label>
-              <input type="email"
-                     id="email"
-                     name="email"
-                     class="form-control text-center text-md-start"
-                     placeholder="Enter your email"
-                     autocomplete="email"
-                     required>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
             </div>
 
             <div class="col-12">
               <label for="password" class="form-label">Password</label>
-              <input type="password"
-                     id="password"
-                     name="password"
-                     class="form-control text-center text-md-start"
-                     placeholder="Enter your password"
-                     autocomplete="current-password"
-                     required>
+              <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
             </div>
 
-            <div class="col-12">
-              <div class="options d-flex flex-wrap justify-content-between align-items-center gap-2">
-                <label class="remember d-flex align-items-center gap-2 mb-0">
-                  <input type="checkbox" name="remember">
-                  <span>Remember Me</span>
-                </label>
-                <a href="#" class="forgot">Forgot Password?</a>
+            <div class="col-12 d-flex justify-content-between align-items-center small">
+              <div class="form-check mb-0">
+                <input type="checkbox" id="remember" name="remember" class="form-check-input">
+                <label for="remember" class="form-check-label">Remember Me</label>
               </div>
+              <a href="signin.html" class="link-teal">Forgot Password?</a>
             </div>
 
             <div class="col-12 mt-3">
-              <button type="submit" class="btn btn-primary w-100">
-                Sign In
-              </button>
+              <button type="submit" class="btn btn-teal w-100 py-2 fw-bold">Sign In</button>
             </div>
-
           </form>
 
-          <p class="signup-link mb-2">
-            Don't have an account?
-            <a href="signin.html">Create Account</a>
+          <p class="text-center small text-muted mt-3 mb-2">
+            Don't have an account? <a href="signin.html" class="link-teal">Create Account</a>
           </p>
 
-          <div class="text-center mt-2">
-            <a href="../index.html" class="home-link">
-              <i class="fa-solid fa-arrow-left me-1"></i>Back to Home
-            </a>
+          <div class="text-center">
+            <a href="../index.html" class="small text-secondary text-decoration-none">Back to Home</a>
           </div>
 
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
 </body>
 </html>
