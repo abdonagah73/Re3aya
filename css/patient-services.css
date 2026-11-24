@@ -1,0 +1,44 @@
+.libre-caslon-condensed-title {
+  font-family: "Libre Caslon Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rubik-main {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.services-header {
+  background-color: #EAF6F5;
+}
+
+.services-subtitle {
+  max-width: 600px;
+}
+
+.search-box {
+  max-width: 460px;
+  background-color: #ffffff;
+  border: 1px solid #d5e2e6;
+  border-radius: 8px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #EAF6F5;
+  color: #247C86;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
