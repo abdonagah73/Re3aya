@@ -1,0 +1,41 @@
+/* Re3aya - services page styles */
+
+:root {
+  --teal: #247C86;
+}
+
+body {
+  background-color: #F7FAFA;
+  color: #333333;
+}
+
+/* Brand colors (same as the home page) */
+.text-teal {
+  color: var(--teal);
+}
+
+.btn-outline-teal {
+  color: var(--teal);
+  border: 1px solid var(--teal);
+  background-color: transparent;
+}
+
+.btn-outline-teal:hover {
+  background-color: var(--teal);
+  color: #ffffff;
+}
+
+/* Service cards */
+.service-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--teal);
+}
